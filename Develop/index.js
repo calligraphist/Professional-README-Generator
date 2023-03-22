@@ -31,6 +31,71 @@ const questions = [
             }
         }
     },
+    {
+        type:`input`,
+        name:`what`,
+        message:`What is your project and what problem can it solve? (Required)`,
+        validate: whatInput=>{
+            if (whatInput){
+                return true;
+            }else{
+                console.log(`please provide some information what your project is about!`);
+                return false;
+            }
+        }
+    },
+    {
+        type:`input`,
+        name:`why`,
+        message:`Why did you create this project? (Required)`,
+        validate: whyInput=>{
+            if (whyInput){
+                return true;
+            }else{
+                console.log(`please enter why you created this project!`);
+                return false;
+            }
+        }
+    },
+    {
+        type:`input`,
+        name:`how`,
+        message:`how can someone benifit with this project? (Required)`,
+        validate: howInput=>{
+            if (howInput){
+                return true;
+            }else{
+                console.log(`please provide some insight about the project!`);
+                return false;
+            }
+        }
+    },
+    {
+        type:`input`,
+        name:`installation`,
+        message:`please provide step by step installation instructions for this project. (Required)`,
+        validate: installInput=>{
+            if (installInput){
+                return true;
+            }else{
+                console.log(`please provide your installation instructions!`);
+                return false;
+            }
+        }
+    },
+    {
+        type:`input`,
+        name:`usage`,
+        message:`please provide instructions and examples of useage? (Required)`,
+        validate: usageInput=>{
+            if (usageInput){
+                return true;
+            }else{
+                console.log(`please enter some instructions about the usage!`);
+                return false;
+            }
+        }
+    },
 ];
 
 // inquirer
