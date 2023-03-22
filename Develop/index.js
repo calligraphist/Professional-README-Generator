@@ -17,7 +17,20 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
+    {
+        type:`input`,
+        name:`email`,
+        message:`What is your email address? (Required)`,
+        validate: githubInput=>{
+            if (githubInput){
+                return true;
+            }else{
+                console.log(`please provide your email!`);
+                return false;
+            }
+        }
+    },
 ];
 
 // inquirer
