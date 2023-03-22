@@ -33,7 +33,46 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
+  ## Table-of-Contets
+
+  *[Discription](#discription)
+  *[Installation](#installation)
+  *[Usage](#usage)
+  ${renderLicenseTOC(data.license)}
+  *[Contributers](#contributers)
+  *[Tests](#tests)
+  *[Questions](#questions)
+
+  ##[Discription](#table-of-contents)
+  ${data.what}
+  ${data.why}
+  ${data.how}
+
+  ##[Installation](#table-of-contents)
+  ${data.installation}
+
+  ##[Usage](#table-of-contents)
+  ${data.usage}
+  For more information on how to add screenshots for examples, visit the following website:
+  
+  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
+  
+  ${renderLicenseSection(data.license)}
+  
+  ##[Contributers](#table-of-contents)
+  ${data.contributers}
+
+  ##[Tests](#table-of-contents)
+  ${data.test}
+
+  ##[Questions](#table-of-contents)
+  
+  If you have any questions, feel free to contact:
+
+  [GitHub](https://github.com/${data.githubusername})
+  [Email:${data.email}](mailto:${data.email})
 `;
 }
 
