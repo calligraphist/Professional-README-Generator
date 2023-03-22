@@ -156,7 +156,26 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+    .then(readmeData => {
+        return readmeData;
+     })
+    
+}
 
 // Function call to initialize app
-init();
+// init()
+// .then(readmeData=>{
+//     console.log(readmeData);
+//     return generateMarkdown(readmeData);
+// })
+// .then(mdPage=>{
+//     return writeFile(mdPage);
+// })
+// .then(writeFileRes => {
+//     console.log(writeFileRes.message);
+// })
+// .catch(err => {
+//     console.log(err);
+// });
