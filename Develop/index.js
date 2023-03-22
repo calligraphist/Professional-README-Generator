@@ -4,7 +4,22 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the tiltle of your project? (Required)', 
+        validate: titleInput=>{
+            if(titleInput){
+                return true;
+            }else{
+                console.log(`please enter the title of your project!`);
+                return false;
+            }
+        }
+    }
+];
+
 // inquirer
 //   .prompt([
 //     {
