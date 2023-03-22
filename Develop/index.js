@@ -22,11 +22,24 @@ const questions = [
         type:`input`,
         name:`email`,
         message:`What is your email address? (Required)`,
+        validate: emailInput=>{
+            if (emailInput){
+                return true;
+            }else{
+                console.log(`please provide your email!`);
+                return false;
+            }
+        }
+    },
+    {
+        type:`input`,
+        name:`github`,
+        message:`What is your github username? (Required)`,
         validate: githubInput=>{
             if (githubInput){
                 return true;
             }else{
-                console.log(`please provide your email!`);
+                console.log(`please provide your github!`);
                 return false;
             }
         }
@@ -96,28 +109,40 @@ const questions = [
             }
         }
     },
+    {
+        type:`list`,
+        name:`license`,
+        message:`please choose the license, you are using for your project.`,
+        choices:[`mit`, ``, ``, ``,  `no license`]
+    },
+    {
+        type:`input`,
+        name:`contributers`,
+        message:`List your contributors/colaborators, if any, with their github profiles.`,
+        default:``,
+    },
+    {
+        type:`confirm`,
+        name:`contribute`,
+        message:`Do you allow other developers contribute?`,
+        default: true
+    },
+    {
+        type:`input`,
+        name:`test`,
+        message:`provide instructions to test the app. (Required)`,
+        validate: testInput=>{
+            if (testInput){
+                return true;
+            }else{
+                console.log(`please enter your test instructions!`);
+                return false;
+            }
+        }
+    },
 ];
 
-// inquirer
-//   .prompt([
-//     {
-//       type: 'input',
-//       name: 'name',
-//       message: 'What is your name?',
-//     },
-//     {
-//       type: 'checkbox',
-//       message: 'What languages do you know?',
-//       name: 'stack',
-//       choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-//     },
-//     {
-//       type: 'list',
-//       message: 'What is your preferred method of communication?',
-//       name: 'contact',
-//       choices: ['email', 'phone', 'telekinesis'],
-//     },
-//   ])
+
 //   .then((data) => {
 //     const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
 
