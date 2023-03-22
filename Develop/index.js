@@ -153,7 +153,16 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    questions()
+    .then(questionData =>{
+        const MDpage = generateMarkdown(questionData)
+        fs.writeFile('./README.md', MDpage, err => {
+            if (err) throw new Error(err);
+            console.log('created README succesfully!');
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -165,17 +174,4 @@ function init() {
 }
 
 // Function call to initialize app
-// init()
-// .then(readmeData=>{
-//     console.log(readmeData);
-//     return generateMarkdown(readmeData);
-// })
-// .then(mdPage=>{
-//     return writeFile(mdPage);
-// })
-// .then(writeFileRes => {
-//     console.log(writeFileRes.message);
-// })
-// .catch(err => {
-//     console.log(err);
-// });
+init();
