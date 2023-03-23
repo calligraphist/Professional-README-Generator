@@ -22,9 +22,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license!== `no license`) {
-    return `## [License](#table-of-contents)
-    This application is under the license:
-    ${renderLicenseLink(license)}`;
+    return `## License
+This application is under the license:
+${renderLicenseLink(license)}`;
   } else {
     return ``;
   }
@@ -35,25 +35,24 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
-  ## Table-of-Contets
+  ## Table of Contents
 
-  *[Discription](#discription)
-  *[Installation](#installation)
-  *[Usage](#usage)
-  ${renderLicenseTOC(data.license)}
-  *[Contributers](#contributers)
-  *[Tests](#tests)
-  *[Questions](#questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributers](#contributers)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-  ##[Discription](#table-of-contents)
+  ## Description
   ${data.what}
   ${data.why}
   ${data.how}
 
-  ##[Installation](#table-of-contents)
+  ## Installation
   ${data.installation}
 
-  ##[Usage](#table-of-contents)
+  ## Usage
   ${data.usage}
   For more information on how to add screenshots for examples, visit the following website:
   
@@ -61,13 +60,13 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
   
-  ##[Contributers](#table-of-contents)
+  ## Contributers
   ${data.contributers}
 
-  ##[Tests](#table-of-contents)
+  ## Tests
   ${data.test}
 
-  ##[Questions](#table-of-contents)
+  ## Questions
   
   If you have any questions, feel free to contact:
 
