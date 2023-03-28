@@ -14,10 +14,12 @@
 
 ## Video of README
 
+Following is the link to my walkthrough video:
 
+https://watch.screencastify.com/v/bcugT94hFRwVYJVusCid
 
 ## Screenshot
-Following is the screenshot of my test README
+Following is the screenshot of my test README:
 ![this fullfill all the requirements](./test.png)
 
 ## Installation 
