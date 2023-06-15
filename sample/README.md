@@ -1,4 +1,4 @@
-# Test Project
+# Test
   ![badge](https://img.shields.io/badge/license-mit-blue)
 
   ## Table of Contents
@@ -11,15 +11,15 @@
   - [Questions](#questions)
 
   ## Description
-  It will solve developers problem to add README file
-  To help developers creating aProfessional README.md
-  By creating a README.md and save time.
+  to help developers
+  solve developers problem
+  developers can save time
 
   ## Installation
-  Git clone the repository and open in terminal
+  git clone the repo
 
   ## Usage
-  run npm install and then node index.js and you will be asked some questions
+  run index.js
   For more information on how to add screenshots for examples, visit the following website:
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
@@ -29,14 +29,14 @@ This application is under the license:
 [mit](https://choosealicense.com/licenses/mit)
   
   ## Contributers
-  no
+  
 
   ## Tests
-  answer the questions and README.md will be generated in sample folder
+  test
 
   ## Questions
   
   If you have any questions, feel free to contact:
 
   [GitHub](https://github.com/undefined)
-  [Email:abc@test.com](mailto:abc@test.com)
+  [Email:test@test.com](mailto:test@test.com)

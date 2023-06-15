@@ -16,11 +16,13 @@
 
 Following is the link to my walkthrough video:
 
-https://watch.screencastify.com/v/bcugT94hFRwVYJVusCid
+https://watch.screencastify.com/v/Bq6yZFNOjfxbiFxVJoTJ
+
+<!-- https://watch.screencastify.com/v/bcugT94hFRwVYJVusCid -->
 
 ## Screenshot
-Following is the screenshot of my test README:
-![this fullfill all the requirements](./test.png)
+Following is the screenshot of my Sample README:
+![this fullfill all the requirements](./Sample.png)
 
 ## Installation 
 
